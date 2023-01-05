@@ -1,22 +1,29 @@
 console.log("Hello");
 function getComputerChoice() {
-    var choice = ['Rock', 'Paper', 'Sicors'],
+    var choice = ['rock', 'paper', 'sicors'],
     computerChoice = choice[Math.floor(Math.random() * choice.length)];
-    // console.log(computerChoice);
+    return computerChoice;
 }
 function playerSelection() {
     let keepGoing = true;
+    let playerChoice;
     while (keepGoing === true) {
-        let playerChoice = prompt('Rock / Paper / Sicors: ');
+        playerChoice = prompt('Rock / Paper / Sicors: ');
         playerChoice = playerChoice.toLowerCase();
-        console.log(playerChoice);
         if (playerChoice === 'rock' || playerChoice === 'paper' || playerChoice === 'sicors') {
             keepGoing = false;
         } else {
             console.log('Please try again');
         }
     }
+    return playerChoice;
 }
-getComputerChoice();
-playerSelection();
+function singleRound() {
+    let humanChoice = playerSelection();
+    let computerChoice = getComputerChoice();
+    
+    console.log('Player: ' + humanChoice);
+    console.log('Computer: ' + computerChoice);
+}
+singleRound();
 console.clear;

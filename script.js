@@ -60,6 +60,12 @@ function game() {
         console.log('_________________ROUND ' +roundCount+ ' ________________');
         roundCount++;
     }
+    if (playerWinCount == computerWinCount)
+        console.log('Its a tie!');
+    else if (playerWinCount > computerWinCount) 
+        console.log('##################YOU WIN!!###################');
+    else 
+        console.log('You lose :(');
 }
 game();
 console.clear;

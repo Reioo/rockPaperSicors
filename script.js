@@ -24,6 +24,18 @@ function singleRound() {
     
     console.log('Player: ' + humanChoice);
     console.log('Computer: ' + computerChoice);
+    checkWinner(humanChoice, computerChoice);
+}
+function checkWinner(human, computer) {
+    if (human === computer) {
+        console.log("It's a tie");
+    }
+    else if (human == 'rock' && computer == 'sicors' || human == 'sicors' && computer == 'paper' || human == 'paper' && computer == 'rock') {
+        console.log('You win!!');
+    } else { 
+        console.log('Computer wins!');
+    }
+
 }
 singleRound();
 console.clear;

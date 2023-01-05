@@ -31,11 +31,10 @@ function checkWinner(human, computer) {
         console.log("It's a tie");
     }
     else if (human == 'rock' && computer == 'sicors' || human == 'sicors' && computer == 'paper' || human == 'paper' && computer == 'rock') {
-        console.log('You win!!');
+        console.log('You win!! ' + human + ' beats ' + computer);
     } else { 
-        console.log('Computer wins!');
+        console.log('Computer wins! ' + computer + ' beats ' + human);
     }
-
 }
 singleRound();
 console.clear;

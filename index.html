@@ -6,9 +6,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RockPaperSicors</title>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     
+    <div id="container">
+        <div id="gamecontainer">
+            <div id="buttoncontainer">
+                <button id="rock" class="button">Rock</button>
+                <button id="paper" class="button">Paper</button>
+                <button id="sicors" class="button">Sicors</button>
+            </div>
+            
+            <div id="choices">
+                <div class="default" id="">Player choice: </div>     
+                <div class="default" id="">Computer choice: </div>
+               
+            </div>
+            <div class="weapon">
+                <div class="default" id="playerchoice"></div>
+                <div class="default" id="computerchoice"></div>
+            </div>
+            <div class="default" id="winner">
+                <div class="default" id="playerwin"></div>
+                <div class="default" id="computerwin"></div>
+            </div>
+        </div>
+            
+        <div class="default" id="score">
+            <div >Score</div>
+            <div id="player">Player:</div>
+            <div id="computer">Computer:</div>
+        </div>
+    </div>
 </body>
 </html>
